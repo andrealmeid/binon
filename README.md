@@ -1,2 +1,2 @@
-# xunybot
-A friendly Telegram bot to reminder my girlfriend to take her pills.
+# Binon
+A friendly Telegram bot to remind my girlfriend to take her pills.
