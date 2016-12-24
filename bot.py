@@ -17,9 +17,9 @@ def getWeather():
     temp_min = str(w.get_temperature('celsius')['temp_min'])
     temp_cur = str(w.get_temperature('celsius')['temp'])
     msg = "Bom dia!\nHoje Sao Paulo estara " + status
-    msg += "\nAgora: " + temp_cur + "º\n"
-    msg += "Maxima: " + temp_max + "º\n"
-    msg += "Minima: " + temp_min + "º"
+    msg += "\nAgora: " + temp_cur + " C\n"
+    msg += "Maxima: " + temp_max + " C\n"
+    msg += "Minima: " + temp_min + " C"
     return msg
 
 bot_id = getId("id/bot.id")
