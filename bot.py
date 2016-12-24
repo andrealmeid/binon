@@ -13,14 +13,16 @@ gf_id = getId("id/gf.id")
 
 bot = telepot.Bot(bot_id)
 
-delay_time = 60*30
+one_hour = 60*60
+delay_time = 24*one_hour
 
 while 1:
     current_hour = datetime.now().time().hour
     current_minute = datetime.now().time().minute
 
-    #please notice there is no caution with time precision here
-    if current_hour >= 11 and current_minute >= 0:
+    if current_hour == 13 and current_minute == 0:
         bot.sendMessage(me_id, 'enviado')
-        bot.sendMessage(gf_id, 'Hey xu, nao esquece de tomar a pilula! :)')
-    time.sleep(delay_time)
+        #bot.sendMessage(gf_id, 'Hey xu, nao esquece de tomar a pilula! :)')
+        time.sleep(delay_time)
+    else:
+        time.sleep(10)
